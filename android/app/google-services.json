@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293733295614",
+    "project_id": "planet-6b20b",
+    "storage_bucket": "planet-6b20b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293733295614:android:c67ea6f71dc1931768ccaf",
+        "android_client_info": {
+          "package_name": "com.example.planet_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuJj44FhgaxIxcR7ZFgrQxeir6T9loxCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

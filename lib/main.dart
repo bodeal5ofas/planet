@@ -1,7 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:planet_app/core/custom_show_snack_bar.dart';
 import 'package:planet_app/core/utils/app_routes.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  setupCustom();
   runApp(const PlanetApp());
 }
 
