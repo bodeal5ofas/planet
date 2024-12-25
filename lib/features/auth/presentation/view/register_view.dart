@@ -31,6 +31,7 @@ class _RegisterViewState extends State<RegisterView> {
           customShowSnackBar(context, state.errMessage);
         } else if (state is RegisterSuccessState) {
           customShowSnackBar(context, 'Sucess');
+          GoRouter.of(context).pushReplacement(AppRoutes.kHomeView);
         } else {
           customShowSnackBar(context, 'Loading');
         }

@@ -29,20 +29,23 @@ class _LoginViewState extends State<LoginView> {
           customShowSnackBar(context, state.errMessage);
         } else if (state is LoginSuccessState) {
           customShowSnackBar(context, 'Sucess');
+          GoRouter.of(context).pushReplacement(AppRoutes.kHomeView);
         } else {
           customShowSnackBar(context, 'Loading');
         }
       },
       child: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                Colors.black.withOpacity(0.6),
-                Colors.lightGreen,
-                Colors.green,
+                Color(0xff73c8a9),
+                Color(0xff373b44)
+                // Colors.black.withOpacity(0.6),
+                // Colors.lightGreen,
+                // Colors.green,
               ])),
           padding: const EdgeInsets.all(10),
           child: Form(
